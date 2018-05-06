@@ -1,0 +1,28 @@
+<mvc:View 	controllerName="pinakiBasicApp.controller.Home" 
+			xmlns:html="http://www.w3.org/1999/xhtml" 
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:core="sap.ui.core"
+			xmlns:ext="pinakiBasicApp.extensions"
+			displayBlock="true" 
+			xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="Input with debounced livechange">
+				<content>
+					<ext:SuggestedInput 
+						bufferedLiveChange="delayedInputLiveChange"
+						liveChange="inputLiveChange"
+						liveChangeDelay="1"
+						showSuggestion="true"
+						suggestionItems="{/Products}">
+						<ext:suggestionItems>
+							<core:Item 
+								text="{ProductName}"
+							/>
+						</ext:suggestionItems>
+					</ext:SuggestedInput>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
