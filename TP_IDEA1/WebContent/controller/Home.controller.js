@@ -11,7 +11,7 @@ sap.ui.define([
 					new sap.m.MessageStrip({
 						type : type[Math.floor(Math.random() * type.length)],
 						showCloseButton:true,
-						text : new Date() + ': Triggered change event with value '+e.getParameter('value')+' after '+e.getParameter('liveChangeDelay')+' seconds'
+						text : new Date() + ': Triggered change event with value '+e.getParameter('value')
 					}).addStyleClass('sapUiSmallMargin')
 			)
 			if(e.getParameter('newValue').indexOf(e.getParameter('oldValue'))>-1 && e.getParameter('oldValue').length>0){

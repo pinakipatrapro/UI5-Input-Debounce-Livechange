@@ -12,7 +12,17 @@
 					<ext:SuggestedInput 
 						bufferedLiveChange="delayedInputLiveChange"
 						liveChange="inputLiveChange"
+						validationRegex="/^\d+$/"
 						liveChangeDelay="1"
+						width="20rem"
+						value="{
+						        path : 'localChanges>/name',
+						        type : 'sap.ui.model.type.String',
+						        constraints : {
+						            search : '\\S+@\\S+\\.\\S+'
+						        }
+						    }"
+						class="sapUiLargeMargin"
 						showSuggestion="true"
 						suggestionItems="{/Products}">
 						<ext:suggestionItems>

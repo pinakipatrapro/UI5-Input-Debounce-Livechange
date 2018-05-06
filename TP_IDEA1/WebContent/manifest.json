@@ -68,6 +68,9 @@
 			"":{
 				"type": "sap.ui.model.odata.ODataModel",
 				"uri": "http://services.odata.org/V2/Northwind/Northwind.svc"
+			},
+			"localChanges":{
+				"type": "sap.ui.model.json.JSONModel"
 			}
 		},
 		"resources": {
